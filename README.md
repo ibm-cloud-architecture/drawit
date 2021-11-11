@@ -8,9 +8,7 @@ Input: RIAS or YAML
 
 Output: draw.io
 
-Note: YAML can be from either Ops Dashboard or user-created.
-
-Latest release: [DrawIT-0.1.18](releases.md)
+Note: YAML can be user-created.
 
 ## RIAS Steps
 
@@ -19,10 +17,7 @@ Latest release: [DrawIT-0.1.18](releases.md)
 - Go to **Manage** and select **Access (IAM)**.
 - Go to **API keys** and select **Create an IBM Cloud API key**.
 - Copy the API Key.
-2. (Optional) Get Account ID:
-- From [IMS Portal](https://internal.softlayer.com/User/dashboard), enter customer name in **Search** on **Customer Name**, select the desired customer account in the search results, click on the BlueMix symbol in upper right, and copy the IBM Cloud Account ID.
-- From [VPC Operations Dashboard](https://opsdashboard.w3.cloud.ibm.com/ops/landing), enter customer name in **Search**, select the desired customer account in the search results, and copy the IBM Cloud Account ID.
-3. Convert RIAS to drawio file(s):
+2. Convert RIAS to drawio file(s):
 - Start **Draw IT** application.
 - Copy API Key into **API Key** field.
 - (Optional) Copy Account ID into **Account ID** field.
@@ -33,27 +28,7 @@ Latest release: [DrawIT-0.1.18](releases.md)
 - Select **Diagram Type**.
 - Select **File Organization**.
 - Select **Generate**.
-4. Set layout and view in drawio:
-- Install and start [IBM v2 drawio desktop](https://github.com/ibm-cloud-architecture/ibm-cloud-stencils/releases) application.
-- Click **Open Existing Diagram** and browse to draw.io file.
-
-## Ops Dashboard Steps
-
-1. Retrieve Account YAML:
-- Login to [VPC Operations Dashboard](https://opsdashboard.w3.cloud.ibm.com/ops/landing).
-- Enter customer name in **Search**.
-- Select an account.
-- Select **Export Account**.
-2. Convert YAML to drawio file(s):
-- Install and start [Draw IT](https://github.ibm.com/acs-sa/DrawIT) application.
-- Click **Select YAML** and browse to YAML file.
-- Use default directory or click **Select Directory** to change directory.
-- Select **Region**.
-- Select **Detail Level**.
-- Select **Diagram Type**.
-- Select **File Organization**.
-- Select **Generate**.
-3. Set layout and view in drawio:
+3. View in drawio:
 - Install and start [IBM v2 drawio desktop](https://github.com/ibm-cloud-architecture/ibm-cloud-stencils/releases) application.
 - Click **Open Existing Diagram** and browse to draw.io file.
 
@@ -88,6 +63,4 @@ Arrows:
 | Public Gateway | Single Arrow | Implemented |
 
 Notes:
-1. For Ops Dashboard, secure access is required to export YAML for your own account and other accounts.
-2. For RIAS on your account, all VPC functionality can be accessed.
-3. For RIAS on other accounts, base VPC functionality can be accessed but Load Balancer and VPN Gateway require whitelisting. 
+1. For RIAS on your account, all VPC functionality can be accessed.
